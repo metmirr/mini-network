@@ -1,0 +1,9 @@
+private_key: PrivateKey-2NHQW8Ur4FxfskZNkJbkTHkit4phELu28KijZfG3oskUMpwfGb
+private_key_hex: b4057ae2d73e25690cc15f7be59ea247b232076d3f918f2496ac50d7997c2cdd
+addresses:
+  "9999":
+    x_address: X-custom17zl5lw6l4uj58aauveh4q7scyhsf9kuz02pwua
+    p_address: X-custom17zl5lw6l4uj58aauveh4q7scyhsf9kuz02pwua
+    c_address: C-custom17zl5lw6l4uj58aauveh4q7scyhsf9kuz02pwua
+short_address: NwxMbLkeECGdX1XBb8ZNi1VK1GB5KXrZq
+eth_address: "0xFb5B8010b3193Cda51427fD32a090fcF1F17Ce2E"

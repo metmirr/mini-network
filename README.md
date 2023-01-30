@@ -2,41 +2,31 @@
 
 This project demonstrates a running an avalanche custom network. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-## Install Avalanche CLI
+## Run network
+
+Network is consists of 3 validator nodes:
 
 ```shell
-curl -sSfL https://raw.githubusercontent.com/ava-labs/avalanche-cli/main/scripts/install.sh | sh -s
-#
-# Command above will install avalanche cli under ~/bin dir
-# Either add ~/bin to your path or call the avalanche cli from absolute path
-export PATH=~/bin:$PATH
+# Run each command on a separate terminal tab
 
-# Make sure installation was successfull
-avalanche --version
+# node1
+./scripts/node1.sh
+
+# node2
+./scripts/node2.sh
+
+# node3
+./scripts/node3.sh
 ```
 
-## Create Subnet
+## Subnet Deployment
 
-```shell
-avalanche subnet create miniNetwork
-# 1. Select SubnetEvm
-# 2. Enter ChainId e.g 43999
-# 3. Token symbol e.g MINI
-# 4. Use latest SubnetEvm version
-# 5. Select Low disk use / Low Throughput 1.5 mil gas/s (C-Chain's setting)
-# 6. Select Airdrop 1 million tokens to the default address (do not use in production)
-# 7. Precompiles: No
-# 8. If all worked successfully, the command prints Successfully created subnet configuration
-# 9. Deploy the subnet to the network:
-avalanche subnet deploy miniNetwork
-# 10. Select local network
-# This command boots a five node Avalanche network on your machine. It needs to download the latest versions of AvalancheGo and Subnet-EVM.
-```
+[Subnet deployment](./subchain-deployment.md)
 
 ## Deploy Smart Contracts
 
 ```shell
-pnpm hardhat run scripts/deploy.ts
+pnpm hardhat run scripts/deploy.ts --network local
 ```
 
 ## Interact with Counter Contract
@@ -46,19 +36,19 @@ pnpm hardhat console --network local
 ```
 
 ```js
-const Counter = await ethers.getContractFactory('')
-const counter = Counter.attach('')
+const Counter = await ethers.getContractFactory('Counter')
+const counter = Counter.attach('0x21B0aC42e0a0848dB409876E34C64E31E4a8eF52')
 const [acc1, acc2] = await ethers.getSigners()
 
 // Increment counter for acc1
-await counter.connect(acc1).increment()
+await counter.increment()
 
 // Read counters
-let allCounters = await counter.getAllCounters()
+await counter.getAllCounters()
 
 // Increment counter for acc2
 await counter.connect(acc2).increment()
 
 // Read counters
-allCounters = await counter.getAllCounters()
+await counter.getAllCounters()
 ```

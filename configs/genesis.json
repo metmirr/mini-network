@@ -1,0 +1,66 @@
+{
+  "networkID": 9999,
+  "allocations": [
+    {
+      "ethAddr": "0xFb5B8010b3193Cda51427fD32a090fcF1F17Ce2E",
+      "avaxAddr": "X-custom17zl5lw6l4uj58aauveh4q7scyhsf9kuz02pwua",
+      "initialAmount": 10000000000000000,
+      "unlockSchedule": [
+        {
+          "amount": 10000000000000000,
+          "locktime": 1633824000
+        }
+      ]
+    },
+    {
+      "ethAddr": "0x5e4Aaa262DbD962039D5CeF2aF6D82610520BDE5",
+      "avaxAddr": "X-custom154xg4yd90t5gs72szaz469lwgsv9pgv264l0kd",
+      "initialAmount": 300000000000000000,
+      "unlockSchedule": [
+        {
+          "amount": 20000000000000000
+        },
+        {
+          "amount": 10000000000000000,
+          "locktime": 1633824000
+        }
+      ]
+    },
+    {
+      "ethAddr": "0xb827d09b032B296605C20eee1c5103056AEF15A3",
+      "avaxAddr": "X-custom17m2p96vg0pnp7ul42yd937p6882g9hgjuetv49",
+      "initialAmount": 10000000000000000,
+      "unlockSchedule": [
+        {
+          "amount": 10000000000000000,
+          "locktime": 1633824000
+        }
+      ]
+    }
+  ],
+  "startTime": 1675077628,
+  "initialStakeDuration": 1706605067,
+  "initialStakeDurationOffset": 5400,
+  "initialStakedFunds": [
+    "X-custom17zl5lw6l4uj58aauveh4q7scyhsf9kuz02pwua"
+  ],
+  "initialStakers": [
+    {
+      "nodeID": "NodeID-Npgy81QJsP1URosXNDVwQR3NBG3WvuxM6",
+      "rewardAddress": "X-custom17zl5lw6l4uj58aauveh4q7scyhsf9kuz02pwua",
+      "delegationFee": 1000000
+    },
+    {
+      "nodeID": "NodeID-P5jGLBv2Ja8qCptix6avAv2N1eCGFnKmg",
+      "rewardAddress": "X-custom17zl5lw6l4uj58aauveh4q7scyhsf9kuz02pwua",
+      "delegationFee": 500000
+    },
+    {
+      "nodeID": "NodeID-JnujTdTiMXKN9LqRDk1SMhztEU1vc7ME2",
+      "rewardAddress": "X-custom17zl5lw6l4uj58aauveh4q7scyhsf9kuz02pwua",
+      "delegationFee": 250000
+    }
+  ],
+  "cChainGenesis": "{\"config\":{\"chainId\":43112,\"homesteadBlock\":0,\"daoForkBlock\":0,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x2086799aeebeae135c246c65021c82b4e15a2c451340993aacfd2751886514f0\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"apricotPhase1BlockTimestamp\":0,\"apricotPhase2BlockTimestamp\":0},\"nonce\":\"0x0\",\"timestamp\":\"0x0\",\"extraData\":\"0x00\",\"gasLimit\":\"0x5f5e100\",\"difficulty\":\"0x0\",\"mixHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"coinbase\":\"0x0000000000000000000000000000000000000000\",\"alloc\":{\"Fb5B8010b3193Cda51427fD32a090fcF1F17Ce2E\":{\"balance\":\"0x295BE96E64066972000000\"},\"5e4Aaa262DbD962039D5CeF2aF6D82610520BDE5\":{\"balance\":\"0x295BE96E64066972000000\"},\"b827d09b032B296605C20eee1c5103056AEF15A3\":{\"balance\":\"0x295BE96E64066972000000\"}},\"number\":\"0x0\",\"gasUsed\":\"0x0\",\"parentHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\"}",
+  "message": "{{ fun_quote }}"
+}

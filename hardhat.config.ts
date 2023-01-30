@@ -21,12 +21,13 @@ const config: HardhatUserConfig = {
   // defaultNetwork: 'local',
   networks: {
     local: {
-      url: 'http://127.0.0.1:9656/ext/bc/22vfZAztBh5VYQRvKi4LJ1UXBURqEtQJCh6JrP2txuPvrVeENd/rpc',
-      chainId: 43999,
+      url: 'http://127.0.0.1:9650/ext/bc/2oTJimtQGCcSu6Gv88B5PbJp6b5EWM3VBE9xM38Ce7swxeXdFE/rpc',
+      chainId: 111,
       accounts: [
-        // First one if funded account
-        "0x56289e99c94b6912bfc12adc093c9b51124f0dc54ac7a766b2bc5ccf558d8027",
-        "0x4f62b95f3d7cd81d5c5a01d9336eb5c10493ccffcb9c4acce6aca5b91f39fe0c"
+        // acc2
+        "0xcb2b82ec1654c24bca239af3060bb6c6ca6ea006c37d374b72bb55c6b69190ea",
+        // acc3
+        "0xf17978b3ed3674e246c61eec3112bf167d5be7989e7abd7718ad1ffc3e77a2cd"
       ]
     },
   },
