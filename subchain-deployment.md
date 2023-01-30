@@ -18,7 +18,7 @@ curl -X POST --data '{
 
 ### Import key for the user
 
-We are using configs/accounts/acc2.txt's private key, which is funded at network creating:
+We are using `configs/accounts/acc2.txt`'s private key, which is funded at network creating:
 
 ```shell
 curl -X POST --data '{
@@ -54,7 +54,7 @@ curl -X POST --data '{
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/bc/P
 ```
 
-Save txId which is subnet id GbJAvRW5oXHLy1tonqzeEuZA9hwd7Tf2aejx7onNy4Q1WW5MB
+Save txId which is subnet id `GbJAvRW5oXHLy1tonqzeEuZA9hwd7Tf2aejx7onNy4Q1WW5MB`
 
 ### Add validator to the subnet
 
@@ -95,6 +95,7 @@ curl -X POST --data '{
 
 ### Create genesis data
 
+```shell
 curl -X POST --data '{
   "jsonrpc": "2.0",
   "id": 1,
@@ -149,6 +150,7 @@ curl -X POST --data '{
     }
   }
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/vm/srEXiWaHuhNyGwPUi444Tu47ZEDwxTWrbQiuD7FmgSAQ6X7Dy/rpc
+```
 
 ### Create blockchain
 
@@ -157,6 +159,7 @@ Do not forget to:
 - Update subnet id
 - Genesis data
 
+```shell
 curl -X POST --data '{
     "jsonrpc": "2.0",
     "method": "platform.createBlockchain",
@@ -170,6 +173,7 @@ curl -X POST --data '{
     },
     "id": 1
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/P
+```
 
 ### Check blockchain status
 
