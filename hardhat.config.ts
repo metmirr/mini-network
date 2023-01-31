@@ -21,7 +21,7 @@ const config: HardhatUserConfig = {
   // defaultNetwork: 'local',
   networks: {
     local: {
-      url: 'http://127.0.0.1:9650/ext/bc/2oTJimtQGCcSu6Gv88B5PbJp6b5EWM3VBE9xM38Ce7swxeXdFE/rpc',
+      url: 'http://127.0.0.1:9650/ext/bc/usYd6ZBVU2NNQarsUeKV5htjZortusZJjSYXP4iXsHzYs1ub4/rpc',
       chainId: 111,
       accounts: [
         // acc2

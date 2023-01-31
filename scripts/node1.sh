@@ -15,4 +15,4 @@ avalanchego --public-ip=127.0.0.1\
   --staking-tls-cert-file=./configs/staking/staker1.crt\
   --staking-tls-key-file=./configs/staking/staker1.key\
   --staking-signer-key-file=./configs/staking/signer1.key\
-  --track-subnets=GbJAvRW5oXHLy1tonqzeEuZA9hwd7Tf2aejx7onNy4Q1WW5MB
+  --track-subnets=2ovZhSU7TvLprhY8JSLMKdyTtgaaLrQ2exdP7PAiRKEtheFpcd
