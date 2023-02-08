@@ -18,11 +18,11 @@ task("transfer", "Transfer", async(_, {ethers}) =>{
 
 const config: HardhatUserConfig = {
   solidity: '0.8.9',
-  // defaultNetwork: 'local',
+  defaultNetwork: 'local',
   networks: {
     local: {
-      url: 'http://127.0.0.1:9650/ext/bc/usYd6ZBVU2NNQarsUeKV5htjZortusZJjSYXP4iXsHzYs1ub4/rpc',
-      chainId: 111,
+      url: 'http://127.0.0.1:9650/ext/bc/C/rpc',
+      chainId: 43112,
       accounts: [
         // acc2
         "0xcb2b82ec1654c24bca239af3060bb6c6ca6ea006c37d374b72bb55c6b69190ea",
